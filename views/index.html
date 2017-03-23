@@ -1,0 +1,38 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<head>
+    <title>Draggagle Cubes WebGL</title>
+    <script src="https://rawgit.com/argonjs/samples/develop/code/resources/lib/three/three.min.js"></script>
+    <script src="https://rawgit.com/argonjs/samples/develop/code/resources/lib/CSS3DArgonHUD.js"></script>
+    <script src="https://rawgit.com/argonjs/argon/develop/dist/argon.js"></script>
+    <script src="https://rawgit.com/argonjs/samples/develop/code/resources/lib/ArgonSunMoon.js"></script>
+    <script src="https://rawgit.com/argonjs/samples/develop/code/resources/lib/stats.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="/includes/style.css">
+</head>
+  <body>
+    <div id="crosshair-wrapper">
+      <img src="https://cdn.glitch.com/160acd26-d5a4-4a5d-a6d6-4ed87fe43bad%2Fcrosshair_small.png?1490214606771" class="crosshair"/>
+    </div>
+    <div id="argon">
+			<div id="hud" style="pointer-events:auto">
+				<div id="menu">
+					<button id="controls">Click to disable crosshair</button>
+				</div>
+			</div>
+      <div onclick="hideMe(this)" id="description">
+        <h2>Draggable Cubes in the World</h2>
+        <h5>(click to dismiss)</h5>
+        <p>This example repurposes the THREE.js draggablecubes example. The cubes have been put 
+          around you in the world. When selected, a cube will then move as the 
+          device moves, keeping it's position relative to the device.  You can use touch/mouse interaction,
+          or crosshair interaction.</p>
+      </div>
+    </div>
+  </body>
+	<script>
+		function hideMe(elem) {
+		    elem.style.display = 'none';
+		}	
+	</script>
+  <script src="/build/app.js"></script>
+</html>
