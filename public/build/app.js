@@ -3,7 +3,7 @@
 // any time we use an INERTIAL frame in Cesium, it needs to know where to find it's
 // ASSET folder on the web.  The SunMoonLights computation uses INERTIAL frames, so
 // so we need to put the assets on the web and point Cesium at them
-var CESIUM_BASE_URL = 'https://bmaci.com/resources/cesium/';
+var CESIUM_BASE_URL = '/assets/cesium/';
 // grab some handles on APIs we use
 var Cesium = Argon.Cesium;
 var Cartesian3 = Argon.Cesium.Cartesian3;
